@@ -1,0 +1,17 @@
+coffee-shop/
+├── index.html
+├── menu.html
+├── cart.html
+├── booking.html
+├── contacts.html
+├── about.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── main.js
+│   ├── cart.js
+│   ├── menu.js
+│   ├── booking.js
+│   ├── cart-page.js
+│   └── contacts.js
+└── images/

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Кофейная смесь - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="Кофейная смесь" style="height: 50px;">
+</a>
+            <nav class="nav">
+                <button class="nav-toggle" aria-label="Открыть меню">☰</button>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="booking.html">Бронирование</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="cart.html" class="cart-link">Корзина (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Кофейная смесь</h1>
+                <p>Авторский кофе, свежая выпечка и уютная атмосфера в центре города</p>
+                <a href="menu.html" class="btn btn-primary">Смотреть меню</a>
+            </div>
+        </section>
+
+        <section class="promo">
+            <div class="container">
+                <h2>Наши акции</h2>
+                <div class="promo-grid">
+                    <div class="promo-card"><h3>Счастливые часы</h3><p>Ежедневно с 8:00 до 10:00 — капучино 150₽</p></div>
+                    <div class="promo-card"><h3>Кофе + десерт</h3><p>Комбо-обед: любой кофе + круассан = 299₽</p></div>
+                    <div class="promo-card"><h3>Бонусная карта</h3><p>Каждый 6-й кофе в подарок!</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hits">
+            <div class="container"><h2>Хиты продаж</h2><div class="hits-grid" id="hits-container"></div></div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h2>Наши гости говорят</h2>
+                <div class="reviews-slider">
+                    <div class="review-card"><p>"Лучший раф в городе! Атмосфера невероятная."</p><span class="review-author">— Анна К.</span></div>
+                    <div class="review-card"><p>"Безумно люблю их чизкейк. Теперь и бронировать столики онлайн можно — удобно!"</p><span class="review-author">— Михаил С.</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-booking">
+            <div class="container">
+                <h2>Забронировать столик</h2>
+                <form id="quick-booking-form">
+                    <div class="form-row">
+                        <input type="text" id="quick-name" placeholder="Ваше имя" required>
+                        <input type="tel" id="quick-phone" placeholder="Телефон" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="date" id="quick-date" required>
+                        <input type="time" id="quick-time" required>
+                        <input type="number" id="quick-guests" placeholder="Кол-во гостей" min="1" max="20" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Забронировать</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col"><h4>Кофейная смесь</h4><p>ул. Пушкина, 10<br>Ежедневно 8:00–22:00</p></div>
+                <div class="footer-col"><h4>Контакты</h4><p>+7 (978) 207-95-82<br>info@coffeesmearf.ru</p></div>
+                <div class="footer-col"><h4>Мы в соцсетях</h4><div class="social-links"><a href="#">Instagram</a> | <a href="#">Telegram</a> | <a href="#">VK</a></div></div>
+            </div>
+            <div class="footer-bottom"><p>© 2025 Кофейная смесь. Все права защищены.</p></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>

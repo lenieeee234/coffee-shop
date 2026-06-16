@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Кофейная смесь</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">КОФЕЙНАЯ <span>СМЕСЬ</span></a>
+            <nav class="nav">
+                <button class="nav-toggle">☰</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="booking.html">Бронирование</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                    <li><a href="cart.html">Корзина (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Контакты</h1>
+            <div class="contacts-grid">
+                <div class="contacts-info">
+                    <div class="contact-block"><h3>Адрес</h3><p>г. Симферополь, ул. Пушкина, д. 10</p></div>
+                    <div class="contact-block"><h3>Телефон</h3><p>+7 (978) 207-95-82</p></div>
+                    <div class="contact-block"><h3>Email</h3><p>info@coffeesmearf.ru</p></div>
+                    <div class="contact-block"><h3>Режим работы</h3><p>Ежедневно: 08:00 – 22:00</p></div>
+                </div>
+                <div class="contact-form">
+                    <h3>Написать нам</h3>
+                    <form id="contact-form">
+                        <input type="text" id="contact-name" placeholder="Ваше имя" required>
+                        <input type="email" id="contact-email" placeholder="Email" required>
+                        <textarea id="contact-message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col"><h4>Кофейная смесь</h4><p>ул. Пушкина, 10<br>Ежедневно 8:00–22:00</p></div>
+                <div class="footer-col"><h4>Контакты</h4><p>+7 (978) 123-45-67<br>info@coffeesmearf.ru</p></div>
+                <div class="footer-col"><h4>Мы в соцсетях</h4><div class="social-links"><a href="#">Instagram</a> | <a href="#">Telegram</a> | <a href="#">VK</a></div></div>
+            </div>
+            <div class="footer-bottom"><p>© 2025 Кофейная смесь</p></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/contacts.js"></script>
+</body>
+</html>

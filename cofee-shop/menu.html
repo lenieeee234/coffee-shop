@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - Кофейная смесь</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="Кофейная смесь" style="height: 50px;">
+            </a>
+            <nav class="nav">
+                <button class="nav-toggle">☰</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="menu.html" class="active">Меню</a></li>
+                    <li><a href="booking.html">Бронирование</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="cart.html">Корзина (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Наше меню</h1>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-category="all">Все</button>
+                <button class="filter-btn" data-category="coffee">Кофе</button>
+                <button class="filter-btn" data-category="tea">Чай</button>
+                <button class="filter-btn" data-category="dessert">Десерты</button>
+                <button class="filter-btn" data-category="sandwich">Сэндвичи</button>
+            </div>
+            <div class="menu-grid" id="menu-container"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col"><h4>Кофейная смесь</h4><p>ул. Пушкина, 10<br>Ежедневно 8:00–22:00</p></div>
+                <div class="footer-col"><h4>Контакты</h4><p>+7 (978) 123-45-67<br>info@coffeesmearf.ru</p></div>
+                <div class="footer-col"><h4>Мы в соцсетях</h4><div class="social-links"><a href="#">Instagram</a> | <a href="#">Telegram</a> | <a href="#">VK</a></div></div>
+            </div>
+            <div class="footer-bottom"><p>© 2025 Кофейная смесь</p></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
